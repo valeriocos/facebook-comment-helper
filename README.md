@@ -22,7 +22,7 @@ Windows program:
 After executing the installer (see [installer folder](tree/master/installer)), 
 the tool will be saved in the machine (default location C:\Program Files\FacebookCommentHelper) and a shortcut will be created on the Desktop
 
-Further information about how to create the installer is available in the see section **Build installer** 
+Note that the installer has been created for Windows 64-bit. Further information about how to create the installer is available in the see section **Build installer** 
 
 ## How to
 The tool comes with a simple GUI that needs a Facebook token and a target page.
@@ -62,7 +62,7 @@ C:\MyApplication\WinPython-64bit-2.7.13.1Zero\tools\facebook-comment-helper> pyt
 ```
 Note that, in order to reduce the size of the installer, you can also remove Python packages that the tools doesn't needed.
 
-4. Open Inno Setup and write a .iss file like the one in the [installer folder](blob/master/installation/installation.iss) and execute it.
+4. Open Inno Setup and write a .iss file like the one in the [installer folder](blob/master/installation/installation.iss) and execute it. Note that if you want to change the target platform from 32 to 64, just modify **DefaultDirName={pf64}..** with **DefaultDirName={pf32}..**
 
 5. The mysetup.exe will appear in a folder called *Output* where the .iss file has been saved.
 
