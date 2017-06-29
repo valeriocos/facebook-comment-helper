@@ -20,7 +20,7 @@ C:\facebook-comment-helper> python ./gui/comment_helper_gui.py
 
 Windows program:
 
-After executing the setup (see [installation](https://github.com/valeriocos/facebook-comment-helper/installation) folder), 
+After executing the setup (see [installation](tree/master/installation) folder), 
 the tool will be saved in the machine (default location C:\Program Files\FacebookCommentHelper) and a shortcut will be created on the Desktop
 
 
@@ -41,4 +41,4 @@ At any moment the user can close the tool by clicking on the exit button of the 
 Currently the tool does not look for relevant comments in nested comment replies.
 
 ## Tutorial
-A short tutorial showing how to use the tool is available in the [docs](https://github.com/valeriocos/facebook-comment-helper/docs) folder
+A short tutorial showing how to use the tool is available in the [docs](tree/master/docs) folder
