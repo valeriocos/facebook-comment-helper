@@ -37,11 +37,10 @@ At any moment the user can close the tool by clicking on the exit button of the 
 
 **Note that a relevant comment is a comment that contains a photo or a video*
 
+**A short tutorial showing how to use the tool is available in the [docs](tree/master/docs) folder**
+
 ## Limitations
 Currently the tool does not look for relevant comments in nested comment replies.
-
-## Tutorial
-A short tutorial showing how to use the tool is available in the [docs](tree/master/docs) folder
 
 ## Build your own installation
 In order to build your own installation, you need:
