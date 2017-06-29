@@ -23,13 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="comment_helper_gui.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="comment_helper_gui.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/comment_helper_gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.25701943" vertical-offset="0" max-vertical-offset="1581">
+            <state line="7" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
               <folding>
                 <element signature="e#80#100#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="installation.iss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/installation/installation.iss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="67" selection-start="207" selection-end="207" vertical-scroll-proportion="0.18888889" vertical-offset="0" max-vertical-offset="510">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,6 +118,7 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/gui/comment_helper_gui.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/installation/installation.iss" />
       </list>
     </option>
   </component>
@@ -505,15 +515,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gui/comment_helper_gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
-          <folding>
-            <element signature="e#80#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1632">
@@ -823,10 +824,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gui/comment_helper_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.25701943" vertical-offset="0" max-vertical-offset="1581">
+        <state line="7" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
           <folding>
             <element signature="e#80#100#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installation/installation.iss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="67" selection-start="207" selection-end="207" vertical-scroll-proportion="0.18888889" vertical-offset="0" max-vertical-offset="510">
+          <folding />
         </state>
       </provider>
     </entry>
