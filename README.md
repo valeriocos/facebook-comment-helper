@@ -46,7 +46,7 @@ Currently the tool does not look for relevant comments in nested comment replies
 In order to build an installer, you need:
 
 - WinPython (https://winpython.github.io/), which is a portable distribution of Python
-- Inno Setup (http://www.jrsoftware.org/isinfo.php), which generates an installer for a Windows program.
+- Inno Setup (http://www.jrsoftware.org/isinfo.php), which generates an installer for Windows.
 
 ### Process:
 
