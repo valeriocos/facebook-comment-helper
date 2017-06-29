@@ -60,7 +60,7 @@ In order to build an installer, you need:
 ```
 C:\MyApplication\WinPython-64bit-2.7.13.1Zero\tools\facebook-comment-helper> python setup.py install
 ```
-Note that, in order to reduce the size of the installer, you can also remove Python packages that the tools doesn't needed.
+Note that, in order to reduce the size of the installer, you can also remove Python packages that the tool doesn't needed.
 
 4. Open Inno Setup and write a .iss file like the one in the [installer folder](blob/master/installation/installation.iss) and execute it. Note that if you want to change the target platform from 32 to 64, just modify **DefaultDirName={pf64}..** with **DefaultDirName={pf32}..**
 
