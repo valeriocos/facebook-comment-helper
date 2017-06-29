@@ -19,6 +19,6 @@ Source: "C:\Users\atlanmod\Desktop\facebook-comment-helper\installer\WinPython-6
 Source: "C:\Users\atlanmod\Desktop\facebook-comment-helper\installer\WinPython-64bit-2.7.13.1Zero\tools\*"; DestDir: "{app}\tools"; Flags: ignoreversion recursesubdirs createallsubdirs;
 
 [Icons]
-Name: "{app}\FacebookCommentHelper.exe"; Filename: "{app}\python-2.7.13.amd64\python.exe"; WorkingDir: "{app}"; Parameters: """{app}\tools\facebook-comment-util\gui\comment_helper_gui.py""";
-Name: "{userdesktop}\FacebookCommentHelper"; Filename: "{app}\python-2.7.13.amd64\python.exe"; WorkingDir: "{app}"; Parameters: """{app}\tools\facebook-comment-util\gui\comment_helper_gui.py""";
+Name: "{app}\FacebookCommentHelper.exe"; Filename: "{app}\python-2.7.13.amd64\python.exe"; WorkingDir: "{app}"; Parameters: """{app}\tools\facebook-comment-helper\gui\comment_helper_gui.py""";
+Name: "{userdesktop}\FacebookCommentHelper"; Filename: "{app}\python-2.7.13.amd64\python.exe"; WorkingDir: "{app}"; Parameters: """{app}\tools\facebook-comment-helper\gui\comment_helper_gui.py""";
 
