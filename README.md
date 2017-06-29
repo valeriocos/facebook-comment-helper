@@ -64,5 +64,5 @@ Note that, in order to reduce the size of the installer, you can also remove Pyt
 
 4. Open Inno Setup and write a .iss file like the one in the [installer folder](blob/master/installation/installation.iss) and execute it.
 
-5. The setup.exe will appear in a folder called *Output* where the .iss file has been saved.
+5. The mysetup.exe will appear in a folder called *Output* where the .iss file has been saved.
 
