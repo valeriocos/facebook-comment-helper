@@ -19,7 +19,7 @@ C:\facebook-comment-helper> python ./gui/comment_helper_gui.py
 
 Windows program:
 
-After executing the installer (see [installer folder](master/installer/Output)), 
+After executing the installer (see [installer folder](installer/Output)), 
 the tool will be saved in the machine (default location C:\Program Files\FacebookCommentHelper) and a shortcut will be created on the Desktop
 
 Note that the installer has been created for Windows 64-bit. Further information about how to create the installer is available in the see section **Build installer** 
@@ -37,7 +37,7 @@ At any moment the user can close the tool by clicking on the exit button of the 
 
 **Note that a relevant comment is a comment that contains a photo or a video*
 
-**A short tutorial showing how to use the tool is available in the [docs folder](tree/master/docs)**
+**A short tutorial showing how to use the tool is available in the [docs folder](docs)**
 
 ## Limitations
 Currently the tool does not look for relevant comments in nested comment replies.
@@ -54,7 +54,7 @@ In order to build an installer, you need:
 
 2. Download and install a WinPython version into MyApplication. For instance, if you download WinPython-64bit-2.7.13.1Zero, you should install it in MyApplication\WinPython-64bit-2.7.13.1Zero.
 
-3. Copy in the folder tools (located in MyApplication\WinPython-64bit-2.7.13.1Zero\tools) the script [setup.py](blob/master/setup.py) and the folders [gui](tree/master/gui), [helper](tree/master/helper) and [resource](tree/master/resource) of this repository.
+3. Copy in the folder tools (located in MyApplication\WinPython-64bit-2.7.13.1Zero\tools) the script [setup.py](setup.py) and the folders [gui](gui) and [helper](helper) of this repository.
 
 3. Using the WinPython Command Prompt.exe (located in MyApplication\WinPython-64bit-2.7.13.1Zero), use the setup.py to install facebook-comment-helper. For instance,
 ```
@@ -62,7 +62,7 @@ C:\MyApplication\WinPython-64bit-2.7.13.1Zero\tools\facebook-comment-helper> pyt
 ```
 Note that, in order to reduce the size of the installer, you can also remove Python packages that the tool doesn't needed.
 
-4. Open Inno Setup and write a .iss file like the one in the [installer folder](blob/master/installation/installation.iss) and execute it. Note that if you want to change the target platform from 32 to 64, just modify **DefaultDirName={pf64}..** with **DefaultDirName={pf32}..**
+4. Open Inno Setup and write a .iss file like the one in the [installer folder](installer/installer.iss) and execute it. Note that if you want to change the target platform from 32 to 64, just modify **DefaultDirName={pf64}..** with **DefaultDirName={pf32}..**
 
 5. The mysetup.exe will appear in a folder called *Output* where the .iss file has been saved.
 
