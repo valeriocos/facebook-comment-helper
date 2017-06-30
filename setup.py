@@ -10,11 +10,6 @@ setup(
                      'Currently, a relevant comment is supposed to contain a photo or a video',
     author='Valerio Cosentino',
     author_email='valerio.cosentino@gmail.com',
-    packages=find_packages(include=['resource', 'helper', 'gui']),
-    install_requires=['facebook-sdk', 'selenium', 'requests'],
-    include_package_data=True,
-    package_data={
-        'resource': ['resource/chromedriver.exe'],
-    },
-    data_files=[('resource', ['resource/chromedriver.exe'])]
+    packages=find_packages(include=['helper', 'gui']),
+    install_requires=['facebook-sdk', 'requests'],
 )

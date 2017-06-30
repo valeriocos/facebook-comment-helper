@@ -27,7 +27,7 @@ Note that the installer has been created for Windows 64-bit. Further information
 ## How to
 The tool comes with a simple GUI that needs a Facebook token and a target page.
 
-Then, by clicking on the button "Launch Browser", a Chrome browser will open and point to facebook.com 
+Then, by clicking on the button "Launch Browser", a tab in the default browser will open and point to facebook.com 
 to allow the user to log in.
 
 Once the user is logged in, he can click the "Get Next Comment" button. The tool will look for the next 
