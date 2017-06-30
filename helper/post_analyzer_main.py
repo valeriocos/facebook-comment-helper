@@ -64,12 +64,16 @@ class PostAnalyzerMain(multiprocessing.Process):
                         post_processor = PostAnalyzer(self._token, self._target_user_id,
                                                       post_id, post_message, self._comments_queue, self._log_queue)
                         self._posts_queue.put(post_processor)
+
                         self._log_queue.put("Adding post[" + str(post_id) + "]:" + (post_message[0:20]).replace("\n", "") + "..., current qsize: " + str(self._posts_queue.qsize()) + "\n")
+
                         multiprocessing_util.check_queue_size(self._posts_queue, PostAnalyzerMain.MAX_QUEUE_SIZE, PostAnalyzerMain.WAITING_TIME)
                     except Exception as ex:
                         template = "The post " + str(p['id']) + " has been skipped. An exception of type {0} occurred. Arguments:{1!r}"
                         message = template.format(type(ex).__name__, ex.args)
+
                         self._log_queue.put(message.replace("\n", "") + "\n")
+
                         continue
 
                 posts = self._fetch_next_page(posts)

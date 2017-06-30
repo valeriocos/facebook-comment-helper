@@ -67,6 +67,7 @@ class PostAnalyzer(object):
 
                             if attachment_type in ('photo', 'video') and user_id != self._target_user_id:
                                 self._comments_queue.put({'id': comment_id, 'created_at': comment_created_at})
+
                                 self._log_queue.put("Adding comment[" + str(comment_id) + "] to the queue, current qsize: " + str(self._comments_queue.qsize()) + "\n")
                         # if '?' in comment_message:
                         #     self._comments_queue.put({'id': comment_id, 'created_at': comment_created_at})
@@ -76,10 +77,12 @@ class PostAnalyzer(object):
                     except Exception as ex:
                         template = "The comment " + str(comment['id']) + " has been skipped. An exception of type {0} occurred. Arguments:{1!r}"
                         message = template.format(type(ex).__name__, ex.args)
+
                         self._log_queue.put(message.replace("\n", "") + "\n")
                         continue
 
                 comments = self._fetch_next_page(comments)
+
             self._log_queue.put("Finishing post[" + str(self._post_id) + "]:" + (self._post_message[0:20]).replace("\n", "") + "..., " + str(comment_count) + " comments analyzed\n")
         except Exception:
             do_nothing = True

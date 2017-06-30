@@ -40,9 +40,11 @@ class FacebookCommentHelper():
 
     def process_next_comment(self):
         next_comment = self._comments_queue.get()
+        self._log_queue.put("Removing comment from the queue, current size: " + str(self._comments_queue.qsize()) + "\n")
         webbrowser.open_new_tab(self._url + next_comment.get('id'))
 
     def stop_activity(self):
+        self._log_queue.put("Closing application...\n")
         multiprocessing_util.empty_queue(self._posts_queue)
         multiprocessing_util.add_poison_pills(PostAnalyzerMain.NUM_PROCESSES, self._posts_queue)
 
