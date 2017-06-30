@@ -19,7 +19,7 @@ C:\facebook-comment-helper> python ./gui/comment_helper_gui.py
 
 Windows program:
 
-After executing the installer (see [installer folder](tree/master/installer)), 
+After executing the installer (see [installer folder](master/installer/Output)), 
 the tool will be saved in the machine (default location C:\Program Files\FacebookCommentHelper) and a shortcut will be created on the Desktop
 
 Note that the installer has been created for Windows 64-bit. Further information about how to create the installer is available in the see section **Build installer** 
